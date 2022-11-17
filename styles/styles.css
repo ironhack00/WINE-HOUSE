@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+  
+#header{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(44, 43, 43, 0.493);
+}
+#header-img{
+    height: 20vh;
+    width: 25vh;
+}
+nav a{
+    border: white 2px solid;
+    width: 5rem;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    border-radius: 4px;
+    color: cornsilk;
+    background-color: rgba(119, 115, 115, 0.466);
+    padding-top: 2px;
+    text-decoration: none;
+}
+#nav-bar{
+    align-self: flex-end;
+    width: 30%;
+    height: 2rem;
+    display: flex;
+    justify-content: space-around;
+    margin-right: 1rem;
+}
+.center{
+    text-align: center;
+    line-height: 3rem;
+    font-size: 1.3rem;
+}
+h1{
+    margin-bottom: 1rem;
+    padding-top: 2rem;
+}
+.wine-one{
+    background-image: url(https://i.pinimg.com/564x/1c/7c/af/1c7caf9cfc5248fa6c66dd4a36e6fc8c.jpg);
+    height: 60vh;
+}
+.wine-two{
+    background-image: url(https://i.pinimg.com/564x/90/a6/25/90a6256b88295b700a3cb85bf8db2b5c.jpg);
+    height: 60vh;
+}
+
+main{
+    background-color: rgba(2, 2, 2, 0.925);
+    min-height: 100vh;
+    padding-top: 8rem;
+}
+.portada {
+    flex-grow: 1;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    transition: 1.9s ;
+  }
+.wines{
+    display: flex;
+    flex-wrap: nowrap;  
+}
+.wine-three{
+    background-image: url(https://i.pinimg.com/564x/db/6a/a5/db6aa5dc25f445a9d69b95d59f4eabdd.jpg);
+    height: 60vh;
+}
+.portada > h2 {
+    background-color: hsla(0, 0%, 13%, 0.822);
+    padding: 1.5%;
+    border-radius: 0.5rem;
+    font-size: 200%;
+}
+.portada:hover{
+    flex-grow: 2;
+}
+.btn {
+    background-color: red;
+    margin: 1rem;
+    padding: 0.5rem 1rem;
+    color: var(--honeydew);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 100%;
+    border-radius: 0.25rem;
+  }
+  .btn:hover {
+    background-color: hsl(355, 78%, 36%);
+  }
+  #submit{
+      background-color: rgb(61, 60, 60);
+      margin-bottom: 1rem;
+      margin-top: 1rem;
+      height: 10%;
+      width: 10%;
+      font-size: 2vw;
+  }
+  #email{
+      width: 30%;
+      height: 2rem;
+      font-size: 1.3rem;
+  }
+  #submit:hover{
+    border: rgb(224, 24, 24) 4px solid;
+    border-radius: 6px;
+}
+.video-class{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    padding-bottom: 4rem;
+}
+footer{
+    height: 3rem;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+@media (max-width: 460px){
+    #header-img{
+        width: 30%;
+        height: 20%;
+    }
+    #nav-bar{
+        height: 20%;
+        width: 20%;
+        margin-right: 3rem;
+    }
+    nav a{
+        margin: 4px;
+    }
+    .wines{
+        flex-direction: column;
+    }
+    #submit{
+        font-size: 1rem;
+        width: 4rem;
+    }
+}    
